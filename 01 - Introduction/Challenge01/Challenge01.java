@@ -25,13 +25,11 @@ public class Challenge01 {
   public static void main(String[] Args) {
     Scanner number = new Scanner(System.in);
 
-    System.out.println("Informe o 1° número: ");
-    int num1 = number.nextInt();
-
-    System.out.println("Informe o 2° número: ");
-    int num2 = number.nextInt();
-
-    try {
+    try (number) {
+      System.out.println("Informe o 1° número: ");
+      int num1 = number.nextInt();
+      System.out.println("Informe o 2° número: ");
+      int num2 = number.nextInt();
       if (num1 >= num2) {
         throw new ParametrosInvalidosException("Error: O número 1 deve ser maior que o número 2...");
       }
@@ -42,10 +40,8 @@ public class Challenge01 {
       }
     } catch (ParametrosInvalidosException e) {
       System.out.println(e.getMessage());
-    } finally {
-      number.close();
     }
-  };
+  }
 }
 
 class ParametrosInvalidosException extends Exception {
