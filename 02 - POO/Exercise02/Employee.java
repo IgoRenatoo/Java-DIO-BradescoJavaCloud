@@ -1,12 +1,12 @@
 /*
-  *Exercício 2: Criando um Pacote e Utilizando-o*
-    Crie uma classe Funcionario. A classe deve conter:
-    - Atributos privados nome (String) e salario (double).
+  Exercício 2: Criando um Pacote e Utilizando-o
+    Crie uma classe Funcionário. A classe deve conter:
+    - Atributos privados nome (String) e salário (double).
     - Métodos getters e setters.
-    - Um construtor que receba nome e salario como parâmetros.
+    - Um construtor que receba nome e salário como parâmetros.
     - Um méthodo exibirDados() para imprimir os detalhes do funcionário.
 
-  ❓ *Perguntas Técnicas*
+  ❓ Perguntas Técnicas
     1. O que é um pacote em Java e por que devemos usá-los?
       R ~> Um pacote em Java é um agrupamento de classes e interfaces relacionadas, organizado em diretórios no sistema de arquivos.
     2. Como podemos importar e utilizar uma classe de outro pacote?
@@ -18,7 +18,7 @@ public class Employee {
   private final String name;
   private double wage;
 
-  public Employee(String name, double wage) { // Metodo construtor
+  public Employee(String name, double wage) { // Método construtor
     this.name = name;
     this.wage = wage;
   }

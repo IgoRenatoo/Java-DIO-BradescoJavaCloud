@@ -16,23 +16,14 @@
       R ~> Associação: Objetos ocupam memória Heap. Muitos objetos podem causar alto consumo, vazamento e queda de desempenho.
            O Garbage Collector ajuda, mas boas práticas evitam desperdício.
 */
-package datauser;
+package model;
 
 public class Person {
-  private String name;
-  private Address address;
+  public String name;
+  public Address address;
 
-  void addDataUser(String addName, Address newAddress){
+  public void addDataUser(String addName, Address newAddress){
     this.name = addName;
     this.address = newAddress;
-  }
-
-  public static void main(String[] args) {
-    Address newAddress = new Address();
-    Person newUser = new Person();
-
-    newAddress.addNewAddress("Rua Dulci", "Vila Velha!");
-    newUser.addDataUser("Igor", newAddress);
-    System.out.println("Seu nome é: " + newUser.name + ", " + newUser.address.displayData());
   }
 }
