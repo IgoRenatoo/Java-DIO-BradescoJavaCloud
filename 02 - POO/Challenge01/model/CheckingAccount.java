@@ -10,17 +10,13 @@
     - Implemente as classes `CheckingAccount` e `SavingsAccount`, que implementam `BankAccount`.
     - Crie uma classe `BankAccountFactory` com um méthodo estático `createAccount(String type, double initialDeposit)`,
       que retorna o tipo de conta correto.
-
-  ❓ Perguntas Técnicas
-    1. Como funcionam os limites de cheque especial em sistemas bancários reais?
-    2. Qual a melhor maneira de implementar cobranças automáticas em uma aplicação bancária?
-    3. Como podemos garantir que as regras de cheque especial sejam aplicadas corretamente no sistema?
 */
+
 package model;
 
 public class CheckingAccount implements BankAccount {
   private double balance;
-  
+
   public CheckingAccount(double initialDeposit) {
     this.balance = initialDeposit;
   }
